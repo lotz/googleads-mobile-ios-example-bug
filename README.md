@@ -16,8 +16,8 @@ For more detail, see the links below.
 
 When the ad renders blank with a `nil` URL, the status will update to indicate this.
 
-<img src="Screenshots/screenshot_nil.png" width="400px" />
+<img src="Screenshots/screenshot_nil.png" width="400px" style="border: 1px solid gray;" />
 
 <br />
 
-<img src="Screenshots/screenshot_not_nil.png" width="400px" />
+<img src="Screenshots/screenshot_not_nil.png" width="400px" style="border: 1px solid gray;" />
