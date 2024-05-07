@@ -8,4 +8,4 @@
 
 When the ad renders blank with a `nil` URL, the status will update to indicate this.
 
-![](Screenshot.png)
+<img src="Screenshot.png" width="400px" />
