@@ -1,6 +1,6 @@
 ### Summary
 
-AdMob banner ads are rendering blank when iOS "suspends" an app that has been in the background for some time. The blank ads appear to be a symptom of a `nil` URL in the underlying `WKWebView`.
+AdMob banner ads are rendering blank when iOS "suspends" an app that has been in the background for some time. The blank ads appear to be caused when the banner view's underlying `WKWebView`'s `url` property becomes `nil`.
 
 To reproduce this, run this sample app on a real device (iPhone) running iOS 17.4 (I am unsure if this issue is present on other iOS versions). Open the app, return to the Home Screen, and then let the app sit in the background from anywhere from 30 minutes to several hours (there is no way to trigger a "suspended" state). When returning to the app, sometimes the ad banner view will be blank, and the message shown should indicate the the URL is `nil`.
 
