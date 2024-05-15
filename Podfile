@@ -1,7 +1,7 @@
-platform :ios, '11.0'
+source 'https://github.com/CocoaPods/Specs.git'
 
- target 'BannerExample' do
-   use_frameworks!
+platform :ios, '10.0'
+
+target 'BannerExample' do
   pod 'Google-Mobile-Ads-SDK'
-  pod 'GoogleUserMessagingPlatform'
 end

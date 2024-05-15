@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63635404A658C4A6CF6611D4 /* libPods-BannerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16454151C01463F4F4925FA /* libPods-BannerExample.a */; };
 		849326E81B066C7900863759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849326E71B066C7900863759 /* AppDelegate.swift */; };
 		849326EA1B066C7900863759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849326E91B066C7900863759 /* ViewController.swift */; };
 		849326ED1B066C7900863759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849326EB1B066C7900863759 /* Main.storyboard */; };
 		849326EF1B066C7900863759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849326EE1B066C7900863759 /* Images.xcassets */; };
 		849326F21B066C7900863759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849326F01B066C7900863759 /* LaunchScreen.xib */; };
-		934ED445A91248C29CC388B3 /* Pods_BannerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20BE52BF182B85EC1D2FDB4 /* Pods_BannerExample.framework */; };
 		A84D338929EE07A2007C35BD /* GoogleMobileAdsConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84D338829EE07A1007C35BD /* GoogleMobileAdsConsentManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +26,8 @@
 		849326EC1B066C7900863759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		849326EE1B066C7900863759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		849326F11B066C7900863759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A16454151C01463F4F4925FA /* libPods-BannerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BannerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84D338829EE07A1007C35BD /* GoogleMobileAdsConsentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsConsentManager.swift; sourceTree = "<group>"; };
-		C20BE52BF182B85EC1D2FDB4 /* Pods_BannerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BannerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934ED445A91248C29CC388B3 /* Pods_BannerExample.framework in Frameworks */,
+				63635404A658C4A6CF6611D4 /* libPods-BannerExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		6783CDA9D4E07E70872B960F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C20BE52BF182B85EC1D2FDB4 /* Pods_BannerExample.framework */,
+				A16454151C01463F4F4925FA /* libPods-BannerExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,15 +110,12 @@
 				849326DE1B066C7900863759 /* Sources */,
 				849326DF1B066C7900863759 /* Frameworks */,
 				849326E01B066C7900863759 /* Resources */,
-				4D95152430E18BA1606E913C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BannerExample;
-			packageProductDependencies = (
-			);
 			productName = BannerExample;
 			productReference = 849326E21B066C7900863759 /* BannerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -149,8 +146,6 @@
 				Base,
 			);
 			mainGroup = 849326D91B066C7900863759;
-			packageReferences = (
-			);
 			productRefGroup = 849326E31B066C7900863759 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,28 +189,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D95152430E18BA1606E913C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BannerExample/Pods-BannerExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BannerExample/Pods-BannerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

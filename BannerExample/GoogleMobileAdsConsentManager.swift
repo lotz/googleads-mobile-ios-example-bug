@@ -27,11 +27,11 @@ class GoogleMobileAdsConsentManager: NSObject {
   static let shared = GoogleMobileAdsConsentManager()
 
   var canRequestAds: Bool {
-    return UMPConsentInformation.sharedInstance.canRequestAds
+    return false
   }
 
   var isPrivacyOptionsRequired: Bool {
-    return UMPConsentInformation.sharedInstance.privacyOptionsRequirementStatus == .required
+    return false
   }
 
   /// Helper method to call the UMP SDK methods to request consent information and load/present a
@@ -40,34 +40,11 @@ class GoogleMobileAdsConsentManager: NSObject {
     from consentFormPresentationviewController: UIViewController,
     consentGatheringComplete: @escaping (Error?) -> Void
   ) {
-    let parameters = UMPRequestParameters()
-
-    //For testing purposes, you can force a UMPDebugGeography of EEA or not EEA.
-    let debugSettings = UMPDebugSettings()
-    // debugSettings.geography = UMPDebugGeography.EEA
-    parameters.debugSettings = debugSettings
-
-    // Requesting an update to consent information should be called on every app launch.
-    UMPConsentInformation.sharedInstance.requestConsentInfoUpdate(with: parameters) {
-      requestConsentError in
-      guard requestConsentError == nil else {
-        return consentGatheringComplete(requestConsentError)
-      }
-
-      UMPConsentForm.loadAndPresentIfRequired(from: consentFormPresentationviewController) {
-        loadAndPresentError in
-
-        // Consent has been gathered.
-        consentGatheringComplete(loadAndPresentError)
-      }
-    }
   }
 
   /// Helper method to call the UMP SDK method to present the privacy options form.
   func presentPrivacyOptionsForm(
     from viewController: UIViewController, completionHandler: @escaping (Error?) -> Void
   ) {
-    UMPConsentForm.presentPrivacyOptionsForm(
-      from: viewController, completionHandler: completionHandler)
   }
 }
