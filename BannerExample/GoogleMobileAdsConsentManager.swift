@@ -27,7 +27,7 @@ class GoogleMobileAdsConsentManager: NSObject {
   static let shared = GoogleMobileAdsConsentManager()
 
   var canRequestAds: Bool {
-    return false
+    return true
   }
 
   var isPrivacyOptionsRequired: Bool {
