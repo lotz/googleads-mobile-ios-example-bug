@@ -35,8 +35,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner (v8.13.0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChV-Lb-5si">
-                                <rect key="frame" x="102" y="144" width="171" height="27"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner (v7.69.0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChV-Lb-5si">
+                                <rect key="frame" x="101.66666666666669" y="144" width="172" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
