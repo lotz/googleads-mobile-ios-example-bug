@@ -154,13 +154,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     // MARK: - GADBannerViewDelegate methods
     
-    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         print(#function)
         
         updateBannerWebViewURLStatus()
     }
     
-    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
+    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
         print(#function + ": " + error.localizedDescription)
         
         updateBannerWebViewURLStatus()
@@ -170,19 +170,11 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         print(#function)
     }
     
-    func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
+    func adViewDidRecordImpression(_ bannerView: GADBannerView) {
         print(#function)
     }
     
-    func bannerViewWillPresentScreen(_ bannerView: GADBannerView) {
-        print(#function)
-    }
-    
-    func bannerViewWillDismissScreen(_ bannerView: GADBannerView) {
-        print(#function)
-    }
-    
-    func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
         print(#function)
     }
 }
